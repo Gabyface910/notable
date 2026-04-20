@@ -2,8 +2,10 @@ import argparse
 import json
 import os
 
+HOME = f"/home/{os.system('whoami')}"
+
 class NoteManager:
-    def __init__(self, filename="notable_notes.json"):
+    def __init__(self, filename=f"{HOME}/notable/notable_notes.json"):
         self.filename = filename
 
     def _read_data(self):
