@@ -2,7 +2,7 @@ import argparse
 import json
 import os
 
-HOME = f"/home/{os.system('whoami')}"
+HOME = os.path.expanduser('~')
 
 class NoteManager:
     def __init__(self, filename=f"{HOME}/notable/notable_notes.json"):
