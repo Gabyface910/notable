@@ -1,0 +1,1 @@
+param (\n    [string[]]$args\n)\n\n# Run the python script with arguments passed through\npython3 ~/notable/main.py @args\n
